@@ -26,8 +26,9 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Ozzy</title>
     </head>
-    <body>
+	
 	<!--
+	<body>
         <div class="app">
             <h1>PhoneGap</h1>
             <div id="deviceready" class="blink">
@@ -41,9 +42,10 @@
         <script type="text/javascript">
             app.initialize();
         </script>
+	</body>
 	-->
 
-	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
 
     // Wait for device API libraries to load
@@ -55,17 +57,17 @@
     // device APIs are available
     //
     function onDeviceReady() {
-        document.addEventListener("resume", onResume, false);
+        // Register the event listener
+        document.addEventListener("menubutton", onMenuKeyDown, false);
     }
 
-    // Handle the resume event
+    // Handle the menu button
     //
-    function onResume() {
+    function onMenuKeyDown() {
     }
 
     </script>
   </head>
   <body onload="onLoad()">
-  </body>
-    </body>
+
 </html>
