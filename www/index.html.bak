@@ -69,5 +69,7 @@
     </script>
   </head>
   <body onload="onLoad()">
+	<img src="img/img1.jog">
+  </body>
 
 </html>
